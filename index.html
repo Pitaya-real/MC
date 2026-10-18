@@ -271,13 +271,13 @@ const nonLatin=s=>/[^\x00-\x7F]/.test(s);
 function defDate(){const n=new Date(),y=(n.getMonth()>9||(n.getMonth()===9&&n.getDate()>20))?n.getFullYear()+1:n.getFullYear();return y+'-10-20'}
 const PRESET={
   love:{from:'Con',to:'Mẹ',greet:"Happy Women's Day",title:'Gửi mẹ !',sign:'Con',
-    letter:'Hôm nay là ngày 20/10, ngày dành riêng cho những người phụ nữ đặc biệt nhất trong cuộc đời con. Cảm ơn mẹ vì đã vất vả sớm hôm, vì luôn lo lắng cho con và vì vẫn mỉm cười cả những lúc mệt mỏi. Con chúc mẹ luôn khỏe mạnh, thật nhiều niềm vui và luôn rạng rỡ như bông hoa đẹp nhất. Con yêu mẹ nhiều lắm.'},
+    letter:'Mẹ ơi, nhân ngày 20/10, con muốn nói với mẹ những điều mà ngày thường con hay ngại nói. Cảm ơn mẹ đã thức khuya dậy sớm, đã lặng lẽ hy sinh và luôn là chỗ dựa vững chắc nhất của con. Dù con có lớn đến đâu, con vẫn mãi là đứa trẻ của mẹ. Chúc mẹ luôn bình an, khỏe mạnh và hạnh phúc. Con thương mẹ nhiều lắm!'},
   friend:{from:'Em',to:'Cô',greet:"Happy Women's Day",title:'Gửi cô !',sign:'Học trò của cô',
-    letter:'Nhân ngày 20/10, em xin kính chúc cô luôn khỏe mạnh, xinh đẹp và thật nhiều niềm vui. Cảm ơn cô đã tận tình dạy dỗ, kiên nhẫn chỉ bảo và luôn quan tâm đến chúng em mỗi ngày. Những điều cô dạy sẽ theo em suốt cuộc đời. Chúc cô một ngày 20/10 thật trọn vẹn!'}
+    letter:'Kính gửi cô, nhân ngày 20/10, em xin gửi đến cô lời chúc tốt đẹp nhất. Cảm ơn cô đã không quản ngại vất vả, cho em kiến thức, cho em niềm tin và dạy em cách trở thành người tử tế. Mỗi bài giảng của cô đều là hành trang quý giá của em. Chúc cô luôn tươi trẻ, dồi dào sức khỏe và gặp thật nhiều niềm vui. Em cảm ơn cô rất nhiều!'}
 };
 const LINES={
-  love:{bloom:['Chờ con một chút thôi...','Mùa xuân đang nở trong tay con','Con gom hết hoa đẹp, để dành tặng mẹ'],bloom2:['Con có đôi lời muốn gửi tới mẹ'],card:['Hôm nay là ngày của mẹ'],letter:['Gửi mẹ, người con thương nhất']},
-  friend:{bloom:['Cô chờ em một chút nhé...','Hoa đang nở, em xin gửi tặng cô','Một mùa xuân nhỏ cho ngày 20/10'],bloom2:['Em mang theo thật nhiều lời chúc tốt đẹp'],card:['Ngày của người cô tuyệt vời'],letter:['Gửi cô, người em luôn kính trọng']}
+  love:{bloom:['Mẹ đợi con một chút nhé...','Hoa đang nở dần trong tay con','Con hái tặng mẹ những bông đẹp nhất'],bloom2:['Có vài lời con giấu trong lòng đã lâu'],card:['Mừng ngày 20/10 của mẹ yêu'],letter:['Gửi mẹ, người con yêu thương nhất']},
+  friend:{bloom:['Cô đợi em một chút nhé...','Từng đóa hoa đang dần hé nở','Em xin gửi cô cả mùa xuân'],bloom2:['Cùng bao lời biết ơn của em'],card:['Mừng ngày 20/10 của cô'],letter:['Gửi cô, người đã dạy em biết bao điều']}
 };
 let CFG={type:'love',...PRESET.love,date:defDate(),music:''};
 let MODE='create';
